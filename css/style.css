@@ -306,7 +306,10 @@ object {
         margin-left: auto;
         margin-right: 0
     }
-
+    .courses-list {
+        list-style: none;
+        height: 486px;
+    }
     .col+.col .col-inner {
         margin-right: auto;
         margin-left: 0
@@ -328,7 +331,12 @@ object {
         order: -1
     }
 }
-
+@media screen and (min-width: 819px) {
+    .courses-list {
+        list-style: none;
+        height: 486px;
+    }
+}
 @media screen and (max-width: 849px) {
     .medium-col-first {
         -webkit-box-ordinal-group: 0;

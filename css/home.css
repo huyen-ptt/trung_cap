@@ -489,7 +489,7 @@ h1 {
 		/* margin: 11px; */
 		padding: 14px;
 		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-		flex: 1 1 calc(33.33% - 20px);
+		flex: 1 1 calc(33.33% - 2px);
 	}
 
 	.padd {
