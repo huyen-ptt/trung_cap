@@ -447,24 +447,36 @@ h1 {
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.icon-bar{
-    display: none;
+.icon-bar {
+	display: none;
 }
 
-.mfp-content{
-    display: none;
+.mfp-content {
+	display: none;
 
 }
+
 @media (max-width: 768px) {
-	.icon-bar{
+	._wgy_feature_card {
+		margin: 10px;
+	}
+
+	._wgy_section_title {
+		padding: 0 10px;
+	}
+
+	.icon-bar {
 		display: block !important;
 	}
+
 	.course-categories {
 		grid-template-columns: 1fr;
 	}
-	.mfp-content{
+
+	.mfp-content {
 		display: block !important;
 	}
+
 	._wgy_why_us {
 		padding: 0px 0;
 		background-color: #ffffff;
@@ -474,10 +486,19 @@ h1 {
 		background: white;
 		border-radius: 10px;
 		/* height: 58px; */
-		margin: 11px;
-		padding: 16px;
+		/* margin: 11px; */
+		padding: 14px;
 		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 		flex: 1 1 calc(33.33% - 20px);
+	}
+
+	.padd {
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+	}
+	#row-1660479862{
+		margin-left: -15 !important;
+		margin-right: -45px !important;
 	}
 
 	.category-title {
@@ -485,13 +506,15 @@ h1 {
 		height: 58px;
 
 	}
+
 	.courses-list {
 		list-style: none;
-		height: 400px;
+		height: 368px;
 	}
+
 	.course-item {
 		padding: 8px;
-		font-size: 14px;
+		font-size: 12px;
 	}
 
 

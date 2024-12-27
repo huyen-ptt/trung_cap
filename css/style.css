@@ -1,4 +1,5 @@
 @charset "UTF-8";
+
 html {
     font-family: sans-serif;
     -ms-text-size-adjust: 100%;
@@ -305,6 +306,7 @@ object {
         margin-left: auto;
         margin-right: 0
     }
+
     .col+.col .col-inner {
         margin-right: auto;
         margin-left: 0
@@ -333,6 +335,7 @@ object {
         -ms-flex-order: -1;
         order: -1
     }
+
     .col {
         padding-bottom: 30px
     }
@@ -342,24 +345,29 @@ object {
     .row-divided>.col+.col:not(.large-12) {
         border-left: 1px solid #ececec
     }
+
     .row-divided.row-reverse>.col+.col:not(.large-12) {
         border-left: 0;
         border-right: 1px solid #ececec
     }
+
     .col-divided {
         padding-right: 30px;
         border-right: 1px solid #ececec
     }
+
     .col.col-divided:not(.col-first):last-child {
         border-right: 0;
         padding-right: 0;
         padding-left: 30px;
         border-left: 1px solid #ececec
     }
+
     .col-border {
         padding-right: 0;
         border-right: 1px solid #ececec
     }
+
     .col-border+.col,
     .col-divided+.col {
         padding-left: 30px
@@ -555,103 +563,122 @@ object {
         -ms-flex-preferred-size: 8.3333333333%;
         flex-basis: 8.3333333333%
     }
+
     .medium-2 {
         max-width: 16.6666666667%;
         -ms-flex-preferred-size: 16.6666666667%;
         flex-basis: 16.6666666667%
     }
+
     .medium-3 {
         max-width: 25%;
         -ms-flex-preferred-size: 25%;
         flex-basis: 25%
     }
+
     .medium-4 {
         max-width: 33.3333333333%;
         -ms-flex-preferred-size: 33.3333333333%;
         flex-basis: 33.3333333333%
     }
+
     .medium-5 {
         max-width: 41.6666666667%;
         -ms-flex-preferred-size: 41.6666666667%;
         flex-basis: 41.6666666667%
     }
+
     .medium-6 {
         max-width: 50%;
         -ms-flex-preferred-size: 50%;
         flex-basis: 50%
     }
+
     .medium-7 {
         max-width: 58.3333333333%;
         -ms-flex-preferred-size: 58.3333333333%;
         flex-basis: 58.3333333333%
     }
+
     .medium-8 {
         max-width: 66.6666666667%;
         -ms-flex-preferred-size: 66.6666666667%;
         flex-basis: 66.6666666667%
     }
+
     .medium-9 {
         max-width: 75%;
         -ms-flex-preferred-size: 75%;
         flex-basis: 75%
     }
+
     .medium-10 {
         max-width: 83.3333333333%;
         -ms-flex-preferred-size: 83.3333333333%;
         flex-basis: 83.3333333333%
     }
+
     .medium-11 {
         max-width: 91.6666666667%;
         -ms-flex-preferred-size: 91.6666666667%;
         flex-basis: 91.6666666667%
     }
+
     .medium-12 {
         max-width: 100%;
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%
     }
+
     .medium-columns-1>.col,
     .medium-columns-1 .flickity-slider>.col {
         max-width: 100%;
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%
     }
+
     .medium-columns-2>.col,
     .medium-columns-2 .flickity-slider>.col {
         max-width: 50%;
         -ms-flex-preferred-size: 50%;
         flex-basis: 50%
     }
+
     .medium-columns-3>.col,
     .medium-columns-3 .flickity-slider>.col {
         max-width: 33.3333333333%;
         -ms-flex-preferred-size: 33.3333333333%;
         flex-basis: 33.3333333333%
     }
+
     .medium-columns-4>.col,
     .medium-columns-4 .flickity-slider>.col {
         max-width: 25%;
         -ms-flex-preferred-size: 25%;
         flex-basis: 25%
     }
+
     .medium-columns-5>.col,
     .medium-columns-5 .flickity-slider>.col {
         max-width: 20%;
         -ms-flex-preferred-size: 20%;
         flex-basis: 20%
     }
+
     .medium-columns-6>.col,
     .medium-columns-6 .flickity-slider>.col {
         max-width: 16.6666666667%;
         -ms-flex-preferred-size: 16.6666666667%;
         flex-basis: 16.6666666667%
     }
+
     .medium-columns-7>.col,
     .medium-columns-7 .flickity-slider>.col {
         max-width: 14.2857142857%;
         -ms-flex-preferred-size: 14.2857142857%;
         flex-basis: 14.2857142857%
     }
+
     .medium-columns-8>.col,
     .medium-columns-8 .flickity-slider>.col {
         max-width: 12.5%;
@@ -666,61 +693,73 @@ object {
         -ms-flex-preferred-size: 8.3333333333%;
         flex-basis: 8.3333333333%
     }
+
     .large-2 {
         max-width: 16.6666666667%;
         -ms-flex-preferred-size: 16.6666666667%;
         flex-basis: 16.6666666667%
     }
+
     .large-3 {
         max-width: 25%;
         -ms-flex-preferred-size: 25%;
         flex-basis: 25%
     }
+
     .large-4 {
         max-width: 33.3333333333%;
         -ms-flex-preferred-size: 33.3333333333%;
         flex-basis: 33.3333333333%
     }
+
     .large-5 {
         max-width: 41.6666666667%;
         -ms-flex-preferred-size: 41.6666666667%;
         flex-basis: 41.6666666667%
     }
+
     .large-6 {
         max-width: 50%;
         -ms-flex-preferred-size: 50%;
         flex-basis: 50%
     }
+
     .large-7 {
         max-width: 58.3333333333%;
         -ms-flex-preferred-size: 58.3333333333%;
         flex-basis: 58.3333333333%
     }
+
     .large-8 {
         max-width: 66.6666666667%;
         -ms-flex-preferred-size: 66.6666666667%;
         flex-basis: 66.6666666667%
     }
+
     .large-9 {
         max-width: 75%;
         -ms-flex-preferred-size: 75%;
         flex-basis: 75%
     }
+
     .large-10 {
         max-width: 83.3333333333%;
         -ms-flex-preferred-size: 83.3333333333%;
         flex-basis: 83.3333333333%
     }
+
     .large-11 {
         max-width: 91.6666666667%;
         -ms-flex-preferred-size: 91.6666666667%;
         flex-basis: 91.6666666667%
     }
+
     .large-12 {
         max-width: 100%;
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%
     }
+
     .gallery-columns-1 .gallery-item,
     .large-columns-1>.col,
     .large-columns-1 .flickity-slider>.col {
@@ -728,6 +767,7 @@ object {
         -ms-flex-preferred-size: 100%;
         flex-basis: 100%
     }
+
     .gallery-columns-2 .gallery-item,
     .large-columns-2>.col,
     .large-columns-2 .flickity-slider>.col {
@@ -735,6 +775,7 @@ object {
         -ms-flex-preferred-size: 50%;
         flex-basis: 50%
     }
+
     .gallery-columns-3 .gallery-item,
     .large-columns-3>.col,
     .large-columns-3 .flickity-slider>.col {
@@ -742,6 +783,7 @@ object {
         -ms-flex-preferred-size: 33.3333333333%;
         flex-basis: 33.3333333333%
     }
+
     .gallery-columns-4 .gallery-item,
     .large-columns-4>.col,
     .large-columns-4 .flickity-slider>.col {
@@ -749,6 +791,7 @@ object {
         -ms-flex-preferred-size: 25%;
         flex-basis: 25%
     }
+
     .gallery-columns-5 .gallery-item,
     .large-columns-5>.col,
     .large-columns-5 .flickity-slider>.col {
@@ -756,6 +799,7 @@ object {
         -ms-flex-preferred-size: 20%;
         flex-basis: 20%
     }
+
     .gallery-columns-6 .gallery-item,
     .large-columns-6>.col,
     .large-columns-6 .flickity-slider>.col {
@@ -763,6 +807,7 @@ object {
         -ms-flex-preferred-size: 16.6666666667%;
         flex-basis: 16.6666666667%
     }
+
     .gallery-columns-7 .gallery-item,
     .large-columns-7>.col,
     .large-columns-7 .flickity-slider>.col {
@@ -770,6 +815,7 @@ object {
         -ms-flex-preferred-size: 14.2857142857%;
         flex-basis: 14.2857142857%
     }
+
     .gallery-columns-8 .gallery-item,
     .large-columns-8>.col,
     .large-columns-8 .flickity-slider>.col {
@@ -965,6 +1011,7 @@ body.boxed .is-sticky-section {
         -ms-flex-flow: column wrap;
         flex-flow: column wrap
     }
+
     .medium-flex-wrap .flex-col {
         padding-top: 5px;
         padding-bottom: 5px;
@@ -982,6 +1029,7 @@ body.boxed .is-sticky-section {
         -ms-flex-flow: column wrap;
         flex-flow: column wrap
     }
+
     .small-flex-wrap .flex-col {
         -webkit-box-flex: 0;
         -ms-flex-positive: 0;
@@ -991,6 +1039,7 @@ body.boxed .is-sticky-section {
 }
 
 @media(min-width: 850px) {
+
     .col2-set,
     .u-columns {
         -js-display: flex;
@@ -998,6 +1047,7 @@ body.boxed .is-sticky-section {
         display: -ms-flexbox;
         display: flex
     }
+
     .col2-set>div+div,
     .u-columns>div+div {
         padding-left: 30px
@@ -1058,9 +1108,11 @@ body.boxed .is-sticky-section {
     .payment-icon svg {
         max-width: 50px
     }
+
     .slider-nav-circle .flickity-prev-next-button svg {
         height: 36px !important
     }
+
     .nav>li>a>i {
         top: -1px
     }
@@ -1195,12 +1247,14 @@ body.boxed .is-sticky-section {
         padding-left: 0;
         padding-right: 0
     }
+
     .row .row-large:not(.row-collapse),
     .container .row-large:not(.row-collapse) {
         margin-left: -30px;
         margin-right: -30px;
         margin-bottom: 0
     }
+
     .row-large>.flickity-viewport>.flickity-slider>.col,
     .row-large>.col {
         padding: 0 30px 30px;
@@ -1818,6 +1872,7 @@ li.has-dropdown:hover>.nav-dropdown-full {
     .nav-divided>li {
         margin: 0 .7em
     }
+
     .nav-divided>li+li>a:after {
         content: "";
         position: absolute;
@@ -1828,6 +1883,7 @@ li.has-dropdown:hover>.nav-dropdown-full {
         margin-top: -7px;
         left: -1em
     }
+
     .nav-divided>li+li.icon-top>a:after {
         height: 50px;
         margin-top: -25px
@@ -2246,6 +2302,7 @@ li.hide-title>a {
         padding-top: 0;
         width: 25%
     }
+
     .nav-vertical+.tab-panels {
         margin-top: 0 !important;
         border-left: 1px solid #ddd;
@@ -2254,6 +2311,7 @@ li.hide-title>a {
         -ms-flex: 1;
         flex: 1
     }
+
     .tabbed-content .nav-vertical.nav-outline {
         padding-right: 15px
     }
@@ -2264,6 +2322,7 @@ li.hide-title>a {
         width: 100%;
         margin: 0 !important
     }
+
     .small-nav-collapse>li a {
         width: 100%;
         display: block
@@ -2279,6 +2338,7 @@ li.hide-title>a {
         -ms-flex-flow: nowrap;
         flex-flow: nowrap
     }
+
     .small-nav-touch>li {
         display: inline-block
     }
@@ -2302,6 +2362,10 @@ li.hide-title>a {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto
+}
+
+.anh {
+    border-radius: 999px;
 }
 
 .sidebar-menu-tabs.nav>li {
@@ -2537,6 +2601,7 @@ li.hide-title>a {
         flex-flow: column;
         margin-bottom: 20px
     }
+
     .small-nav-vertical>li {
         list-style: none;
         margin: 0 !important;
@@ -3101,15 +3166,18 @@ li.hide-title>a {
         flex-basis: 100% !important;
         max-width: 100% !important
     }
+
     .box-list-view .box,
     .box-vertical {
         display: table;
         width: 100%
     }
+
     .box-list-view .box .image-right,
     .box-vertical .image-right {
         direction: rtl
     }
+
     .box-list-view .box .box-image,
     .box-list-view .box .box-text,
     .box-vertical .box-image,
@@ -3118,15 +3186,18 @@ li.hide-title>a {
         display: table-cell;
         vertical-align: middle
     }
+
     .box-list-view .box .box-text,
     .box-vertical .box-text {
         padding-left: 1.5em;
         padding-right: 1.5em
     }
+
     .box-list-view .box .box-image,
     .box-vertical .box-image {
         width: 50%
     }
+
     .box-list-view .box.align-top .box-text,
     .box-vertical.align-top .box-text {
         vertical-align: top
@@ -3700,6 +3771,7 @@ select.resize-select {
     select::-ms-expand {
         display: none
     }
+
     select:focus::-ms-value {
         background: transparent;
         color: currentColor
@@ -4989,17 +5061,21 @@ screen and (max-height: 300px) {
         padding-left: 0;
         padding-right: 0
     }
+
     .mfp-img-mobile img.mfp-img {
         padding: 0
     }
+
     .mfp-img-mobile .mfp-figure:after {
         top: 0;
         bottom: 0
     }
+
     .mfp-img-mobile .mfp-figure small {
         display: inline;
         margin-left: 5px
     }
+
     .mfp-img-mobile .mfp-bottom-bar {
         background: rgba(0, 0, 0, .6);
         bottom: 0;
@@ -5010,9 +5086,11 @@ screen and (max-height: 300px) {
         -webkit-box-sizing: border-box;
         box-sizing: border-box
     }
+
     .mfp-img-mobile .mfp-bottom-bar:empty {
         padding: 0
     }
+
     .mfp-img-mobile .mfp-counter {
         right: 5px;
         top: 3px
@@ -5130,6 +5208,7 @@ screen and (max-height: 300px) {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg)
     }
+
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg)
@@ -5141,6 +5220,7 @@ screen and (max-height: 300px) {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg)
     }
+
     100% {
         -webkit-transform: rotate(360deg);
         transform: rotate(360deg)
@@ -5293,9 +5373,11 @@ screen and (max-height: 300px) {
 .off-canvas-center .nav-vertical>li>a {
     font-size: 1.5em
 }
-.kham-pha{
+
+.kham-pha {
     padding-left: 30px;
 }
+
 .off-canvas-center .mfp-container {
     padding: 0
 }
@@ -5594,6 +5676,7 @@ screen and (max-height: 300px) {
         right: auto;
         left: 100%
     }
+
     .slider-nav-outside .flickity-prev-next-button.previous {
         left: auto;
         right: 100%
@@ -5926,6 +6009,7 @@ button.flickity-prev-next-button[disabled] {
     .slider-wrapper .flickity-prev-next-button {
         display: none
     }
+
     .row-slider .flickity-prev-next-button {
         width: 20px !important;
         opacity: .8;
@@ -5936,13 +6020,16 @@ button.flickity-prev-next-button[disabled] {
         -ms-transform: translateX(0) !important;
         transform: translateX(0) !important
     }
+
     .row-slider .flickity-prev-next-button svg {
         padding: 3px !important;
         border: 0 !important
     }
+
     .flickity-page-dots {
         pointer-events: none
     }
+
     .flickity-slider .banner-layers {
         overflow: hidden
     }
@@ -6060,69 +6147,84 @@ button.flickity-prev-next-button[disabled] {
         -ms-flex-direction: row;
         flex-direction: row
     }
+
     .md\:stack-row>* {
         margin: 0 !important
     }
+
     .md\:stack-row>*~* {
         margin-left: var(--stack-gap) !important
     }
+
     .md\:stack-col {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column
     }
+
     .md\:stack-col>* {
         margin: 0 !important
     }
+
     .md\:stack-col>*~* {
         margin-top: var(--stack-gap) !important
     }
+
     .md\:items-stretch {
         -webkit-box-align: stretch;
         -ms-flex-align: stretch;
         align-items: stretch
     }
+
     .md\:items-start {
         -webkit-box-align: start;
         -ms-flex-align: start;
         align-items: flex-start
     }
+
     .md\:items-center {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center
     }
+
     .md\:items-end {
         -webkit-box-align: end;
         -ms-flex-align: end;
         align-items: flex-end
     }
+
     .md\:items-baseline {
         -webkit-box-align: baseline;
         -ms-flex-align: baseline;
         align-items: baseline
     }
+
     .md\:justify-start {
         -webkit-box-pack: start;
         -ms-flex-pack: start;
         justify-content: flex-start
     }
+
     .md\:justify-center {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center
     }
+
     .md\:justify-end {
         -webkit-box-pack: end;
         -ms-flex-pack: end;
         justify-content: flex-end
     }
+
     .md\:justify-between {
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between
     }
+
     .md\:justify-around {
         -ms-flex-pack: distribute;
         justify-content: space-around
@@ -6136,69 +6238,84 @@ button.flickity-prev-next-button[disabled] {
         -ms-flex-direction: row;
         flex-direction: row
     }
+
     .sm\:stack-row>* {
         margin: 0 !important
     }
+
     .sm\:stack-row>*~* {
         margin-left: var(--stack-gap) !important
     }
+
     .sm\:stack-col {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
         flex-direction: column
     }
+
     .sm\:stack-col>* {
         margin: 0 !important
     }
+
     .sm\:stack-col>*~* {
         margin-top: var(--stack-gap) !important
     }
+
     .sm\:items-stretch {
         -webkit-box-align: stretch;
         -ms-flex-align: stretch;
         align-items: stretch
     }
+
     .sm\:items-start {
         -webkit-box-align: start;
         -ms-flex-align: start;
         align-items: flex-start
     }
+
     .sm\:items-center {
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center
     }
+
     .sm\:items-end {
         -webkit-box-align: end;
         -ms-flex-align: end;
         align-items: flex-end
     }
+
     .sm\:items-baseline {
         -webkit-box-align: baseline;
         -ms-flex-align: baseline;
         align-items: baseline
     }
+
     .sm\:justify-start {
         -webkit-box-pack: start;
         -ms-flex-pack: start;
         justify-content: flex-start
     }
+
     .sm\:justify-center {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center
     }
+
     .sm\:justify-end {
         -webkit-box-pack: end;
         -ms-flex-pack: end;
         justify-content: flex-end
     }
+
     .sm\:justify-between {
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
         justify-content: space-between
     }
+
     .sm\:justify-around {
         -ms-flex-pack: distribute;
         justify-content: space-around
@@ -6274,6 +6391,7 @@ label {
         -webkit-box-shadow: inset -2px 0px 18px -5px rgba(0, 0, 0, .5);
         box-shadow: inset -2px 0px 18px -5px rgba(0, 0, 0, .5)
     }
+
     .touch-scroll-table table {
         width: 100%
     }
@@ -6589,9 +6707,11 @@ h1.entry-title.mb {
     h1 {
         font-size: 1.4em
     }
+
     h2 {
         font-size: 1em
     }
+
     h3 {
         font-size: 1em
     }
@@ -6719,12 +6839,15 @@ span.widget-title {
     .is-xxlarge {
         font-size: 2.5em
     }
+
     .is-xlarge {
         font-size: 1.8em
     }
+
     .is-larger {
         font-size: 1.2em
     }
+
     .is-large {
         font-size: 1em
     }
@@ -6987,10 +7110,12 @@ blockquote {
 }
 
 @media(max-width: 549px) {
+
     [data-show=hide-for-small],
     .hide-for-small {
         display: none !important
     }
+
     .small-text-center {
         text-align: center !important;
         width: 100% !important;
@@ -6999,6 +7124,7 @@ blockquote {
 }
 
 @media(min-width: 550px) {
+
     [data-show=show-for-small],
     .show-for-small {
         display: none !important
@@ -7006,6 +7132,7 @@ blockquote {
 }
 
 @media(min-width: 850px) {
+
     [data-show=show-for-medium],
     .show-for-medium {
         display: none !important
@@ -7013,20 +7140,25 @@ blockquote {
 }
 
 @media(max-width: 849px) {
+
     [data-show=hide-for-medium],
     .hide-for-medium {
         display: none !important
     }
+
     .medium-text-center .pull-left,
     .medium-text-center .pull-right {
         float: none
     }
+
     .medium-text-center .ml {
         margin-left: auto
     }
+
     .medium-text-center .mr {
         margin-right: auto
     }
+
     .medium-text-center {
         text-align: center !important;
         width: 100% !important;
@@ -7035,6 +7167,7 @@ blockquote {
 }
 
 @media(min-width: 850px) {
+
     [data-show=hide-for-large],
     .hide-for-large {
         display: none !important
@@ -7553,135 +7686,177 @@ img.inline {
     .x5 {
         left: 5%
     }
+
     .x15 {
         left: 15%
     }
+
     .x25 {
         left: 25%
     }
+
     .x35 {
         left: 35%
     }
+
     .x45 {
         left: 45%
     }
+
     .x55 {
         right: 45%
     }
+
     .x65 {
         right: 35%
     }
+
     .x75 {
         right: 25%
     }
+
     .x85 {
         right: 15%
     }
+
     .x95 {
         right: 5%
     }
+
     .x0 {
         left: 0%
     }
+
     .x10 {
         left: 10%
     }
+
     .x20 {
         left: 20%
     }
+
     .x30 {
         left: 30%
     }
+
     .x40 {
         left: 40%
     }
+
     .x60 {
         right: 40%
     }
+
     .x70 {
         right: 30%
     }
+
     .x80 {
         right: 20%
     }
+
     .x90 {
         right: 10%
     }
+
     .x100 {
         right: 0%
     }
+
     .y0 {
         top: 0%
     }
+
     .y10 {
         top: 10%
     }
+
     .y20 {
         top: 20%
     }
+
     .y30 {
         top: 30%
     }
+
     .y40 {
         top: 40%
     }
+
     .y60 {
         bottom: 40%
     }
+
     .y70 {
         bottom: 30%
     }
+
     .y80 {
         bottom: 20%
     }
+
     .y90 {
         bottom: 10%
     }
+
     .y100 {
         bottom: 0%
     }
+
     .y5 {
         top: 5%
     }
+
     .y15 {
         top: 15%
     }
+
     .y25 {
         top: 25%
     }
+
     .y35 {
         top: 35%
     }
+
     .y45 {
         top: 45%
     }
+
     .y55 {
         bottom: 45%
     }
+
     .y65 {
         bottom: 35%
     }
+
     .y75 {
         bottom: 25%
     }
+
     .y85 {
         bottom: 15%
     }
+
     .y95 {
         bottom: 5%
     }
+
     .x50 {
         left: 50%;
         -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
         transform: translateX(-50%)
     }
+
     .y50 {
         top: 50.3%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%)
     }
+
     .y50.x50 {
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -7693,135 +7868,177 @@ img.inline {
     .md-x5 {
         left: 5%
     }
+
     .md-x15 {
         left: 15%
     }
+
     .md-x25 {
         left: 25%
     }
+
     .md-x35 {
         left: 35%
     }
+
     .md-x45 {
         left: 45%
     }
+
     .md-x55 {
         right: 45%
     }
+
     .md-x65 {
         right: 35%
     }
+
     .md-x75 {
         right: 25%
     }
+
     .md-x85 {
         right: 15%
     }
+
     .md-x95 {
         right: 5%
     }
+
     .md-y5 {
         top: 5%
     }
+
     .md-y15 {
         top: 15%
     }
+
     .md-y25 {
         top: 25%
     }
+
     .md-y35 {
         top: 35%
     }
+
     .md-y45 {
         top: 45%
     }
+
     .md-y55 {
         bottom: 45%
     }
+
     .md-y65 {
         bottom: 35%
     }
+
     .md-y75 {
         bottom: 25%
     }
+
     .md-y85 {
         bottom: 15%
     }
+
     .md-y95 {
         bottom: 5%
     }
+
     .md-x0 {
         left: 0%
     }
+
     .md-x10 {
         left: 10%
     }
+
     .md-x20 {
         left: 20%
     }
+
     .md-x30 {
         left: 30%
     }
+
     .md-x40 {
         left: 40%
     }
+
     .md-x60 {
         right: 40%
     }
+
     .md-x70 {
         right: 30%
     }
+
     .md-x80 {
         right: 20%
     }
+
     .md-x90 {
         right: 10%
     }
+
     .md-x100 {
         right: 0%
     }
+
     .md-y0 {
         top: 0%
     }
+
     .md-y10 {
         top: 10%
     }
+
     .md-y20 {
         top: 20%
     }
+
     .md-y30 {
         top: 30%
     }
+
     .md-y40 {
         top: 40%
     }
+
     .md-y60 {
         bottom: 40%
     }
+
     .md-y70 {
         bottom: 30%
     }
+
     .md-y80 {
         bottom: 20%
     }
+
     .md-y90 {
         bottom: 10%
     }
+
     .md-y100 {
         bottom: 0%
     }
+
     .md-x50 {
         left: 50%;
         -webkit-transform: translateX(-50%) !important;
         -ms-transform: translateX(-50%) !important;
         transform: translateX(-50%) !important
     }
+
     .md-y50 {
         top: 50%;
         -webkit-transform: translateY(-50%) !important;
         -ms-transform: translateY(-50%) !important;
         transform: translateY(-50%) !important
     }
+
     .md-x50.md-y50 {
         -webkit-transform: translate(-50%, -50%) !important;
         -ms-transform: translate(-50%, -50%) !important;
@@ -7833,135 +8050,177 @@ img.inline {
     .lg-x5 {
         left: 5%
     }
+
     .lg-x15 {
         left: 15%
     }
+
     .lg-x25 {
         left: 25%
     }
+
     .lg-x35 {
         left: 35%
     }
+
     .lg-x45 {
         left: 45%
     }
+
     .lg-x55 {
         right: 45%
     }
+
     .lg-x65 {
         right: 35%
     }
+
     .lg-x75 {
         right: 25%
     }
+
     .lg-x85 {
         right: 15%
     }
+
     .lg-x95 {
         right: 5%
     }
+
     .lg-y5 {
         top: 5%
     }
+
     .lg-y15 {
         top: 15%
     }
+
     .lg-y25 {
         top: 25%
     }
+
     .lg-y35 {
         top: 35%
     }
+
     .lg-y45 {
         top: 45%
     }
+
     .lg-y55 {
         bottom: 45%
     }
+
     .lg-y65 {
         bottom: 35%
     }
+
     .lg-y75 {
         bottom: 25%
     }
+
     .lg-y85 {
         bottom: 15%
     }
+
     .lg-y95 {
         bottom: 5%
     }
+
     .lg-x0 {
         left: 0%
     }
+
     .lg-x10 {
         left: 10%
     }
+
     .lg-x20 {
         left: 20%
     }
+
     .lg-x30 {
         left: 30%
     }
+
     .lg-x40 {
         left: 40%
     }
+
     .lg-x60 {
         right: 40%
     }
+
     .lg-x70 {
         right: 30%
     }
+
     .lg-x80 {
         right: 20%
     }
+
     .lg-x90 {
         right: 10%
     }
+
     .lg-x100 {
         right: 0%
     }
+
     .lg-y0 {
         top: 0%
     }
+
     .lg-y10 {
         top: 10%
     }
+
     .lg-y20 {
         top: 20%
     }
+
     .lg-y30 {
         top: 30%
     }
+
     .lg-y40 {
         top: 40%
     }
+
     .lg-y60 {
         bottom: 40%
     }
+
     .lg-y70 {
         bottom: 30%
     }
+
     .lg-y80 {
         bottom: 20%
     }
+
     .lg-y90 {
         bottom: 10%
     }
+
     .lg-y100 {
         bottom: 0%
     }
+
     .lg-x50 {
         left: 50%;
         -webkit-transform: translateX(-50%) !important;
         -ms-transform: translateX(-50%) !important;
         transform: translateX(-50%) !important
     }
+
     .lg-y50 {
         top: 50%;
         -webkit-transform: translateY(-50%) !important;
         -ms-transform: translateY(-50%) !important;
         transform: translateY(-50%) !important
     }
+
     .lg-x50.lg-y50 {
         -webkit-transform: translate(-50%, -50%) !important;
         -ms-transform: translate(-50%, -50%) !important;
@@ -8025,6 +8284,7 @@ img.inline {
 }
 
 @media screen and (min-width: 550px) {
+
     .medium-1 .res-text,
     .medium-2 .res-text,
     .medium-3 .res-text,
@@ -8034,18 +8294,23 @@ img.inline {
     .medium-7 .res-text {
         font-size: .8vw
     }
+
     .medium-8 .res-text {
         font-size: .9vw
     }
+
     .medium-9 .res-text {
         font-size: 1.15vw
     }
+
     .medium-10 .res-text {
         font-size: 1.3vw
     }
+
     .medium-11 .res-text {
         font-size: 1.5vw
     }
+
     .res-text {
         font-size: 1.8vw
     }
@@ -8055,43 +8320,54 @@ img.inline {
     .res-text {
         font-size: 16px
     }
+
     .widget-area .res-text,
     .large-1 .res-text,
     .large-2 .res-text,
     .large-3 .res-text {
         font-size: 8px
     }
+
     .large-1 .res-text h6,
     .large-2 .res-text h6,
     .large-3 .res-text h6 {
         font-size: 10px
     }
+
     .large-1 .res-text p.lead,
     .large-2 .res-text p.lead,
     .large-3 .res-text p.lead {
         font-size: 16px
     }
+
     .large-4 .res-text {
         font-size: 8.5px
     }
+
     .large-5 .res-text {
         font-size: 9px
     }
+
     .large-6 .res-text {
         font-size: 10px
     }
+
     .large-7 .res-text {
         font-size: 11px
     }
+
     .large-8 .res-text {
         font-size: 12px
     }
+
     .large-9 .res-text {
         font-size: 13px
     }
+
     .large-10 .res-text {
         font-size: 14px
     }
+
     .large-11 .res-text {
         font-size: 15px
     }
@@ -8347,6 +8623,7 @@ img.inline {
         -webkit-transform: translateY(-100%);
         transform: translateY(-100%)
     }
+
     100% {
         -webkit-transform: translateY(0);
         transform: translateY(0)
@@ -8358,6 +8635,7 @@ img.inline {
         -webkit-transform: translateY(-100%);
         transform: translateY(-100%)
     }
+
     100% {
         -webkit-transform: translateY(0);
         transform: translateY(0)
@@ -8369,6 +8647,7 @@ img.inline {
         -webkit-transform: translateY(100%);
         transform: translateY(100%)
     }
+
     100% {
         -webkit-transform: translateY(0);
         transform: translateY(0)
@@ -8380,6 +8659,7 @@ img.inline {
         -webkit-transform: translateY(100%);
         transform: translateY(100%)
     }
+
     100% {
         -webkit-transform: translateY(0);
         transform: translateY(0)
@@ -8390,6 +8670,7 @@ img.inline {
     0% {
         opacity: 0
     }
+
     100% {
         opacity: 1
     }
@@ -8399,6 +8680,7 @@ img.inline {
     0% {
         opacity: 0
     }
+
     100% {
         opacity: 1
     }
@@ -9580,6 +9862,7 @@ html {
         float: left;
         margin-right: 2em
     }
+
     .entry-image-float+.entry-content {
         padding-top: 0
     }
@@ -9628,11 +9911,13 @@ li.recentcomments a {
         float: left;
         margin-right: 1.5em
     }
+
     .alignright {
         display: inline;
         float: right;
         margin-left: 1.5em
     }
+
     .aligncenter {
         clear: both;
         display: block;
@@ -10128,14 +10413,17 @@ ul.menu>li.has-child,
         margin-left: -15px;
         margin-right: -15px
     }
+
     .comment-form>div {
         padding: 0 15px;
         width: 100%
     }
+
     .comment-form>p {
         padding: 0 15px;
         width: 100%
     }
+
     .comment-form p.comment-form-author,
     .comment-form p.comment-form-email,
     .comment-form p.comment-form-url {
@@ -10411,6 +10699,7 @@ html {
         -ms-flex-wrap: nowrap;
         flex-wrap: nowrap
     }
+
     .medium-logo-left .flex-left {
         -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
@@ -10419,11 +10708,13 @@ html {
         -ms-flex: 0;
         flex: 0
     }
+
     .medium-logo-left .logo {
         -webkit-box-flex: 1;
         -ms-flex: 1;
         flex: 1
     }
+
     .medium-logo-center .flex-left {
         -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -10432,6 +10723,7 @@ html {
         -ms-flex: 1 1 0px;
         flex: 1 1 0
     }
+
     .medium-logo-center .logo {
         -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
@@ -10439,9 +10731,11 @@ html {
         text-align: center;
         margin: 0 15px
     }
+
     .medium-logo-center .logo img {
         margin: 0 auto
     }
+
     .medium-logo-center .flex-right {
         -webkit-box-flex: 1;
         -ms-flex: 1 1 0px;
@@ -11039,9 +11333,11 @@ html {
         text-align: center;
         font-size: .9em
     }
+
     .flatsome-cookies__buttons {
         margin-top: 15px
     }
+
     .flatsome-cookies__text {
         padding-right: 0
     }
