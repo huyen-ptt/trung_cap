@@ -2,7 +2,71 @@
 	padding: 40px 0;
 	background-color: #ffffff;
 }
+.zalo-widget {
+	position: fixed;
+    bottom: 55px;
+    right: -5px;
+    z-index: 9999;
+}
 
+.zalo-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #0068ff;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.zalo-button img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.qr-popup {
+    position: absolute;
+    bottom: 70px;
+    right: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    padding: 20px;
+    width: 250px;
+    display: none;
+}
+
+.qr-content {
+    text-align: center;
+}
+
+
+.qr-code {
+    /* padding: 10px; */
+    background: #f5f5f5;
+    border-radius: 4px;
+    /* margin: 10px 0; */
+}
+
+.qr-code img {
+    width: 100%;
+    height: auto;
+}
+
+h3 {
+    margin: 0 0 10px 0;
+    color: #333;
+}
+
+p {
+    margin: 10px 0 0 0;
+    font-size: 14px;
+    color: #666;
+}
 ._wgy_section_title {
 	text-align: center;
 	margin-bottom: 50px;
@@ -410,7 +474,7 @@ h1 {
 }
 
 .course-item {
-	padding: 12px;
+	padding: 10px;
 	margin-bottom: 10px;
 	background: #f8f9fa;
 	border-radius: 5px;
@@ -425,8 +489,8 @@ h1 {
 .contact-btn {
 	display: inline-block;
 	padding: 8px 15px;
-	background: #ffd700;
-	color: #003366;
+	background: #2561b1;
+	color: #ffffff;
 	text-decoration: none;
 	border-radius: 5px;
 	font-size: 14px;
@@ -513,8 +577,8 @@ h1 {
 	}
 
 	.course-item {
-		padding: 8px;
-		font-size: 12px;
+		padding: 7px;
+        font-size: 9px;
 	}
 
 

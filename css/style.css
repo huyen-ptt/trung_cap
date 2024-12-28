@@ -9736,10 +9736,13 @@ html {
 .stuck .hide-for-sticky {
     display: none
 }
-
+#col-2015245727{
+    background: #2561b1;
+}
 .header-wrapper.stuck,
 .header-shadow .header-wrapper,
 .layout-shadow #wrapper {
+    background-color: white;
     -webkit-box-shadow: 1px 1px 10px rgba(0, 0, 0, .15);
     box-shadow: 1px 1px 10px rgba(0, 0, 0, .15)
 }
