@@ -4446,7 +4446,8 @@ img {
 
 .img,
 .img img {
-    width: 100%
+    width: 100%;
+    z-index: 99;
 }
 
 .overlay {
