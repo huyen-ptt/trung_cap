@@ -851,10 +851,31 @@
 
 									<div id="stack-1498671185" class="stack stack-row justify-start items-stretch">
 
-										<a href="#dang-ky" target="_self" class="button primary lowercase" 
-											style="border-radius:5px;    background: #2561b1;">
-											<span>Tìm hiểu thêm</span>
-										</a>
+										<button onclick="openPDF()" class="button_mo">Tìm hiểu thêm</button>
+
+										<div id="pdfViewer" class="pdf-container_mo">
+											<span class="close_mo" onclick="closePDF()">&times;</span>
+											<iframe height="400" id="pdfFrame" class="pdf-viewer_mo" src="./imgs/tb.pdf"></iframe>
+										</div>
+									
+										<script>
+											function openPDF() {
+												document.getElementById("pdfViewer").style.display = "block";
+												document.body.style.overflow = "hidden"; // Prevent scrolling
+											}
+									
+											function closePDF() {
+												document.getElementById("pdfViewer").style.display = "none";
+												document.body.style.overflow = "auto"; // Enable scrolling
+											}
+									
+											// Đóng khi nhấn ESC
+											document.addEventListener('keydown', function(event) {
+												if (event.key === "Escape") {
+													closePDF();
+												}
+											});
+										</script>
 
 										<!-- <a href="#school-tour" target="_self" class="button secondary lowercase"
 											style="border-radius:5px;">
@@ -863,10 +884,44 @@
 
 
 										<style>
-											#stack-1498671185>* {
-												--stack-gap: 0.5rem;
+											.button_mo {
+												padding: 10px 20px;
+												background: #2561b1;
+												color: white;
+												border: none;
+												border-radius: 5px;
+												cursor: pointer;
+											}
+									
+											.pdf-container_mo {
+												display: none;
+												position: fixed;
+												top: 0;
+												left: 0;
+												width: 100%;
+												/* height: 100%; */
+												height: 400px;
+												background-color: rgba(0, 0, 0, 0.8);
+												z-index: 1000;
+											}
+									
+											.pdf-viewer_mo {
+												width: 100%;
+												height: 100%;
+												border: none;
+											}
+									
+											.close_mo {
+												position: fixed;
+												top: 20px;
+												right: 30px;
+												color: white;
+												font-size: 30px;
+												cursor: pointer;
+												z-index: 1001;
 											}
 										</style>
+									
 									</div>
 
 								</div>
@@ -3762,7 +3817,6 @@
 		border: none;
 		border-radius: 5px;
 		cursor: pointer;
-		text-transform: lowercase;
 	}
 
 	.modal_mo {
@@ -3788,13 +3842,13 @@
 	}
 
 	.close_mo {
-		position: absolute;
-		right: 20px;
-		top: 10px;
-		font-size: 24px;
-		cursor: pointer;
-		color: #666;
-	}
+    position: absolute;
+    right: 7px;
+    top: 1px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #f0f0f0;
+}
 
 	.image-container_mo {
 		display: flex;
