@@ -555,7 +555,9 @@ h1 {
 		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 		flex: 1 1 calc(33.33% - 2px);
 	}
-
+	#image_203693043 {
+		width: 28% !important;
+	}
 	.padd {
 		padding-left: 0px !important;
 		padding-right: 0px !important;
