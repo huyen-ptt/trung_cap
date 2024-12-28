@@ -3,7 +3,7 @@
 	;
 		align-items: center;
 		/* padding: 8px 12px; */
-		border-radius: 20px;
+		border-radius: 999px;
 		text-decoration: none;
 		/* background: #fff; */
 		box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
@@ -63,7 +63,8 @@
   /* Mobile Responsive */
   @media screen and (max-width: 768px) {
 	.wh-widget-button_mes {
-	  padding: 6px 10px;
+		padding: 12px 13px;
+        background: #c4d2d2; 
 	}
 	
 	.wh-messenger-bg-facebook_mes {

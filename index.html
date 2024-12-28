@@ -851,76 +851,13 @@
 
 									<div id="stack-1498671185" class="stack stack-row justify-start items-stretch">
 
-										<button onclick="openPDF()" class="button_mo">Tìm hiểu thêm</button>
-
-										<div id="pdfViewer" class="pdf-container_mo">
-											<span class="close_mo" onclick="closePDF()">&times;</span>
-											<iframe height="400" id="pdfFrame" class="pdf-viewer_mo" src="./imgs/tb.pdf"></iframe>
+										<div class="text-center mt-5">
+											<a href="#section_571452186" class="btn _wgy_cta_button" data-bs-toggle="modal"
+												data-bs-target="#imageModal" style="background: #2561b1;">
+												Tìm hiểu thêm
+											</a>
 										</div>
 									
-										<script>
-											function openPDF() {
-												document.getElementById("pdfViewer").style.display = "block";
-												document.body.style.overflow = "hidden"; // Prevent scrolling
-											}
-									
-											function closePDF() {
-												document.getElementById("pdfViewer").style.display = "none";
-												document.body.style.overflow = "auto"; // Enable scrolling
-											}
-									
-											// Đóng khi nhấn ESC
-											document.addEventListener('keydown', function(event) {
-												if (event.key === "Escape") {
-													closePDF();
-												}
-											});
-										</script>
-
-										<!-- <a href="#school-tour" target="_self" class="button secondary lowercase"
-											style="border-radius:5px;">
-											<span>School tour</span>
-										</a> -->
-
-
-										<style>
-											.button_mo {
-												padding: 10px 20px;
-												background: #2561b1;
-												color: white;
-												border: none;
-												border-radius: 5px;
-												cursor: pointer;
-											}
-									
-											.pdf-container_mo {
-												display: none;
-												position: fixed;
-												top: 0;
-												left: 0;
-												width: 100%;
-												/* height: 100%; */
-												height: 400px;
-												background-color: rgba(0, 0, 0, 0.8);
-												z-index: 1000;
-											}
-									
-											.pdf-viewer_mo {
-												width: 100%;
-												height: 100%;
-												border: none;
-											}
-									
-											.close_mo {
-												position: fixed;
-												top: 20px;
-												right: 30px;
-												color: white;
-												font-size: 30px;
-												cursor: pointer;
-												z-index: 1001;
-											}
-										</style>
 									
 									</div>
 
@@ -1998,10 +1935,10 @@
 										<div class="modal-body">
 											<div class="row">
 												<div class="col-md-6">
-													<img src="/api/placeholder/400/300" alt="Image 1" class="img-fluid">
+													<img src="./imgs/h3.png" alt="Image 1" class="img-fluid">
 												</div>
 												<div class="col-md-6">
-													<img src="/api/placeholder/400/300" alt="Image 2" class="img-fluid">
+													<img src="./imgs/hi1.jpg" alt="Image 2" class="img-fluid">
 												</div>
 											</div>
 										</div>
