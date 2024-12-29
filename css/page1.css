@@ -8,7 +8,7 @@
 		/* background: #fff; */
 		box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
 		position: fixed;
-		bottom: 127px;
+		top: 127px;
 		right: 12px;
 		z-index: 9999;
 		animation: shake_mes 0.5s ease-in-out infinite;
@@ -59,7 +59,56 @@
   .clear_mes {
 	clear: both;
   }
-  
+  .phone-link {
+	color: #FFB84D;
+
+    text-decoration: none;
+    font-weight: bold;
+    position: relative;
+    padding: 2px 5px;
+    transition: all 0.3s ease;
+}
+
+/* Hiệu ứng gạch chân animation */
+.phone-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    color: #FFB84D;
+
+    transition: width 0.3s ease;
+}
+
+.phone-link:hover::after {
+    width: 100%;
+}
+
+/* Hiệu ứng nhấp nháy */
+.phone-link.blinking {
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
+
+/* Hiệu ứng rung khi hover */
+.phone-link:hover {
+    animation: shake 0.3s ease-in-out infinite;
+    color: #003399;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-2px); }
+    75% { transform: translateX(2px); }
+}
+
   /* Mobile Responsive */
   @media screen and (max-width: 768px) {
 	.wh-widget-button_mes {
