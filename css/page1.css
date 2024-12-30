@@ -13,7 +13,148 @@
 		z-index: 9999;
 		animation: shake_mes 0.5s ease-in-out infinite;
   }
+  .animated-text {
+	font-size: 3.5em; /* Điều chỉnh kích thước chữ */
+	font-weight: bold; /* Làm cho chữ đậm */
+	text-align: center; /* Căn giữa chữ */
+	color: #FFD700; /* Màu chữ vàng ban đầu */
+	text-transform: uppercase; /* Chữ in hoa */
+	letter-spacing: 2px; /* Khoảng cách giữa các ký tự */
+	animation: fadeInUp 1s ease-out forwards; /* Hiệu ứng xuất hiện */
+  }
   
+  @keyframes fadeInUp {
+	0% {
+	  opacity: 0;
+	  transform: translateY(20px);
+	}
+	100% {
+	  opacity: 1;
+	  transform: translateY(0);
+	}
+  }
+  
+  .animated-text span {
+	display: inline-block;
+	animation: colorChange 2s infinite alternate; /* Hiệu ứng thay đổi màu chữ */
+  }
+  
+  /* Tạo hiệu ứng màu sắc cho chữ */
+  @keyframes colorChange {
+	0% {
+	  color: #FFD700; /* Màu vàng */
+	}
+	
+	50% {
+	  color: #FFD700; /* Màu vàng */
+	}
+	100% {
+		color: #003399; /* Màu xanh biển đậm */
+	  }
+  }
+  .box-1{
+	padding: 10px;
+  }
+  .contact-buttons {
+    position: fixed;
+    right: 17px;
+    top: 137px;
+	display: flex;
+	gap: 16px;
+	z-index: 9999;
+}
+
+.contact-button {
+	position: relative;
+	width: 48px;
+	height: 48px;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	transition: all 0.3s ease;
+	animation: bounce 2s infinite;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-button:hover {
+	transform: scale(1.1);
+	box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.messenger {
+	background: linear-gradient(45deg, #0088ff, #0055ff);
+	animation-delay: 0s;
+}
+
+.messenger:hover {
+	box-shadow: 0 6px 12px rgba(0, 136, 255, 0.3);
+}
+
+.zalo {
+	background: linear-gradient(45deg, #0068ff, #0045cc);
+	animation-delay: 0.1s;
+}
+
+.zalo:hover {
+	box-shadow: 0 6px 12px rgba(0, 104, 255, 0.3);
+}
+
+.phone {
+	background: linear-gradient(45deg, #2ecc71, #27ae60);
+	animation-delay: 0.2s;
+}
+
+.phone:hover {
+	box-shadow: 0 6px 12px rgba(46, 204, 113, 0.3);
+}
+
+.contact-button svg {
+	width: 24px;
+	height: 24px;
+	fill: white;
+}
+
+.contact-button .tooltip {
+	position: absolute;
+	right: calc(100% + 12px);
+	top: 50%;
+	transform: translateY(-50%);
+	background: #333;
+	color: white;
+	padding: 4px 8px;
+	border-radius: 4px;
+	font-size: 14px;
+	white-space: nowrap;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease;
+}
+
+.contact-button:hover .tooltip {
+	opacity: 1;
+	visibility: visible;
+}
+
+.zalo-text {
+	color: white;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+@keyframes bounce {
+	0%, 20%, 50%, 80%, 100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-8px);
+	}
+	60% {
+		transform: translateY(-4px);
+	}
+}
   @keyframes shake_mes {
 	0% { transform: rotate(0deg); }
 	25% { transform: rotate(-5deg); }

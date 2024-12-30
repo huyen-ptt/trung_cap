@@ -2,71 +2,73 @@
 	padding: 40px 0;
 	background-color: #ffffff;
 }
+
 .zalo-widget {
 	position: fixed;
-    top: 185px;
-    right: -5px;
-    z-index: 9999;
+	top: 185px;
+	right: -5px;
+	z-index: 9999;
 }
 
 .zalo-button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: #0068ff;
-    border: none;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background: #0068ff;
+	border: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0;
 }
 
 .zalo-button img {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
 }
 
 .qr-popup {
-    position: absolute;
-    bottom: 70px;
-    right: 0;
-    background: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.15);
-    padding: 20px;
-    width: 250px;
-    display: none;
+	position: absolute;
+	bottom: 70px;
+	right: 0;
+	background: white;
+	border-radius: 8px;
+	box-shadow: 0 2px 12px rgba(0, 0, 0, 0.15);
+	padding: 20px;
+	width: 250px;
+	display: none;
 }
 
 .qr-content {
-    text-align: center;
+	text-align: center;
 }
 
 
 .qr-code {
-    /* padding: 10px; */
-    background: #f5f5f5;
-    border-radius: 4px;
-    /* margin: 10px 0; */
+	/* padding: 10px; */
+	background: #f5f5f5;
+	border-radius: 4px;
+	/* margin: 10px 0; */
 }
 
 .qr-code img {
-    width: 100%;
-    height: auto;
+	width: 100%;
+	height: auto;
 }
 
 h3 {
-    margin: 0 0 10px 0;
-    color: #333;
+	margin: 0 0 10px 0;
+	color: #333;
 }
 
 p {
-    margin: 10px 0 0 0;
-    font-size: 14px;
-    color: #666;
+	margin: 10px 0 0 0;
+	font-size: 14px;
+	color: #666;
 }
+
 ._wgy_section_title {
 	text-align: center;
 	margin-bottom: 50px;
@@ -97,10 +99,18 @@ p {
 	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
+.dau {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
 ._wgy_icon_box {
+	position: absolute;
+	left: -32px;
 	width: 60px;
 	height: 60px;
-	background: #FFB84D ;
+	background: #FFB84D;
 	border-radius: 10px;
 	display: flex;
 	align-items: center;
@@ -124,15 +134,84 @@ p {
 	height: 240px;
 }
 
+.title-big span {
+	display: inline-block;
+	font-size: 170%;
+	background: linear-gradient(45deg, #003399, #045db7);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	animation: titleGlow 3s infinite;
+	text-shadow: 0 0 10px rgba(0, 51, 153, 0.3);
+}
+
+@keyframes titleGlow {
+	0% {
+		transform: scale(1);
+		filter: brightness(100%);
+	}
+
+	50% {
+		transform: scale(1.03);
+		filter: brightness(120%);
+	}
+
+	100% {
+		transform: scale(1);
+		filter: brightness(100%);
+	}
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+	.title-big span {
+		font-size: 140%;
+	}
+}
 
 ._wgy_feature_text {
 	color: #6c757d;
 	font-size: 0.95rem;
 	line-height: 1.6;
 }
+.main-text{
+	font-size: 28px;
+}
+.contact-buttons {
+    right: 3px !important;
+   
+}
+.scholarship-item {
+ 
+    padding: 0 !important;
+    margin-bottom: 0 !important;
+}
+._wgy_icon_box {
+	position: absolute;
+	left: -28px;
 
+}
+.animated-text span{
+	font-size: 69% !important;
+}
+.flex-container {
+
+    gap: 1rem !important;
+}
+.mb{
+	margin-bottom: 10px !important;
+}
+#section_121964731 {
+    padding-top: 30px;
+    padding-bottom: 0px;
+}
+.col, .gallery-item, .columns {
+    position: relative;
+    margin: 0;
+    padding: 0 15px 0px !important;
+    width: 100%;
+}
 ._wgy_cta_button {
-	background: #FFB84D ;
+	background: #FFB84D;
 	color: white;
 	padding: 12px 30px;
 	border-radius: 5px;
@@ -483,140 +562,152 @@ h1 {
 }
 
 .course-item:hover {
-	background: #e9ecef;
+	background: #003399;
+	color: #fff;
+
 	transform: translateX(5px);
 }
+
 .main-container {
-	min-height: 100vh;
+	/* min-height: 100vh; */
 	background: #F9FAFB;
 	padding: 2rem;
 }
-.cta-button {
-    /* Style cơ bản */
-    padding: 15px 30px;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
-    background: #003399;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-    
-    /* Hiệu ứng phóng to thu nhỏ */
-    animation: pulse 2s infinite;
 
-    /* Hiệu ứng hover */
-    transition: all 0.3s ease;
+.cta-button {
+	/* Style cơ bản */
+	padding: 15px 30px;
+	font-size: 18px;
+	font-weight: bold;
+	color: white;
+	background: #003399;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+
+	/* Hiệu ứng phóng to thu nhỏ */
+	animation: pulse 2s infinite;
+
+	/* Hiệu ứng hover */
+	transition: all 0.3s ease;
 }
+
 .icon-wrapper {
-    width: 80px;
-    height: 80px;
-    background: #003399;  /* Màu xanh đậm */
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto;
-    transition: all 0.3s ease;
+	width: 80px;
+	height: 80px;
+	background: #003399;
+	/* Màu xanh đậm */
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	transition: all 0.3s ease;
 }
 
 .icon-wrapper:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 5px 15px rgba(0, 51, 153, 0.3);
+	transform: translateY(-5px);
+	box-shadow: 0 5px 15px rgba(0, 51, 153, 0.3);
 }
 
 .icon {
-    font-size: 40px;
-    color: white;
+	font-size: 40px;
+	color: white;
 }
-#col-1058349030 .featured-box{
-	gap:20px;
+
+#col-1058349030 .featured-box {
+	gap: 20px;
 }
+
 .icon-title {
-    text-align: center;
-    margin-top: 15px;
-    font-weight: bold;
-    color: #333;
+	text-align: center;
+	margin-top: 15px;
+	font-weight: bold;
+	color: #333;
 }
 
 .icon-description {
-    text-align: center;
-    color: #666;
-    margin-top: 5px;
+	text-align: center;
+	color: #666;
+	margin-top: 5px;
 }
+
 /* Hiệu ứng phóng to thu nhỏ */
 @keyframes pulse {
-    0% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(255, 68, 68, 0.7);
-    }
-    70% {
-        transform: scale(1.05);
-        box-shadow: 0 0 0 10px rgba(255, 68, 68, 0);
-    }
-    100% {
-        transform: scale(1);
-        box-shadow: 0 0 0 0 rgba(255, 68, 68, 0);
-    }
+	0% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(255, 68, 68, 0.7);
+	}
+
+	70% {
+		transform: scale(1.05);
+		box-shadow: 0 0 0 10px rgba(255, 68, 68, 0);
+	}
+
+	100% {
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(255, 68, 68, 0);
+	}
 }
 
 /* Hiệu ứng chữ chạy */
 .cta-button::before {
-    content: '';
-    position: absolute;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: linear-gradient(
-        to right,
-        transparent,
-        rgba(255, 255, 255, 0.3),
-        transparent
-    );
-    transform: rotate(45deg);
-    animation: shine 3s infinite;
+	content: '';
+	position: absolute;
+	top: -50%;
+	left: -50%;
+	width: 200%;
+	height: 200%;
+	background: linear-gradient(to right,
+			transparent,
+			rgba(255, 255, 255, 0.3),
+			transparent);
+	transform: rotate(45deg);
+	animation: shine 3s infinite;
 }
 
 @keyframes shine {
-    0% {
-        left: -50%;
-    }
-    100% {
-        left: 150%;
-    }
+	0% {
+		left: -50%;
+	}
+
+	100% {
+		left: 150%;
+	}
 }
 
 /* Hiệu ứng hover */
 .cta-button:hover {
-    transform: translateY(-3px) scale(1.05);
-    /* background: #ff2222; */
-    box-shadow: 0 5px 15px rgba(255, 68, 68, 0.4);
+	transform: translateY(-3px) scale(1.05);
+	/* background: #ff2222; */
+	box-shadow: 0 5px 15px rgba(255, 68, 68, 0.4);
 }
 
 /* Hiệu ứng khi click */
 .cta-button:active {
-    transform: translateY(2px);
+	transform: translateY(2px);
 }
 
 /* Hiệu ứng thu vào */
 @keyframes collapse {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    100% {
-        transform: scale(0.3);
-        opacity: 0;
-    }
+	0% {
+		transform: scale(1);
+		opacity: 1;
+	}
+
+	100% {
+		transform: scale(0.3);
+		opacity: 0;
+	}
 }
 
 /* Thêm class này khi muốn nút thu vào */
 .cta-button.collapse {
-    animation: collapse 0.5s forwards;
+	animation: collapse 0.5s forwards;
 }
+
 .content-wrapper {
 	max-width: 1200px;
 	margin: 0 auto;
@@ -699,9 +790,21 @@ h1 {
 	color: #FDB813;
 }
 
-.star-1 { top: 1rem; right: 1rem; }
-.star-2 { top: 50%; left: 1rem; color: #EF4444; }
-.star-3 { bottom: 1rem; right: 50%; }
+.star-1 {
+	top: 1rem;
+	right: 1rem;
+}
+
+.star-2 {
+	top: 50%;
+	left: 1rem;
+	color: #EF4444;
+}
+
+.star-3 {
+	bottom: 1rem;
+	right: 50%;
+}
 
 .title {
 	color: #003366;
@@ -767,10 +870,13 @@ h1 {
 
 
 @media (max-width: 768px) {
-	.image-section, .content-section {
+
+	.image-section,
+	.content-section {
 		flex: 0 0 100%;
 	}
 }
+
 .contact-btn {
 	display: inline-block;
 	padding: 8px 15px;
@@ -780,13 +886,17 @@ h1 {
 	border-radius: 5px;
 	font-size: 14px;
 	margin-top: 10px;
-	transition: all 0.3s ease;
-}
-
-.contact-btn:hover {
-	background: #ffed4a;
-	color: #003366;
-}
+	animation: pulse 2s infinite;
+	transition: all 0.3s ease; /* Mượt mà khi thay đổi */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Thêm bóng đổ nhẹ */
+	transform: scale(1.1); /* Phóng to nhẹ ngay từ ban đầu */
+  }
+  
+  /* Khi nhấn vào nút */
+  .contact-btn:active {
+	transform: scale(0.95); /* Thu nhỏ nút khi click */
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bóng đổ mạnh hơn khi click */
+  }
 
 .summary {
 	text-align: center;
@@ -796,7 +906,12 @@ h1 {
 	border-radius: 10px;
 	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
+#col-415615234{
+	margin: auto;
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
 .icon-bar {
 	display: none;
 }
@@ -810,7 +925,9 @@ h1 {
 	._wgy_feature_card {
 		margin: 10px;
 	}
-
+.title-big{
+	padding: 10px;
+}
 	._wgy_section_title {
 		padding: 0 10px;
 	}
@@ -841,17 +958,21 @@ h1 {
 		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 		flex: 1 1 calc(33.33% - 2px);
 	}
-	.nu{
+
+	.nu {
 		display: none;
 	}
+
 	#image_203693043 {
 		width: 28% !important;
 	}
+
 	.padd {
 		padding-left: 0px !important;
 		padding-right: 0px !important;
 	}
-	#row-1660479862{
+
+	#row-1660479862 {
 		margin-left: -15 !important;
 		margin-right: -45px !important;
 	}
@@ -862,6 +983,10 @@ h1 {
 
 	}
 
+	.anh-an {
+		display: none;
+	}
+
 	.courses-list {
 		list-style: none;
 		height: 368px;
@@ -869,7 +994,7 @@ h1 {
 
 	.course-item {
 		padding: 7px;
-        font-size: 9px;
+		font-size: 9px;
 	}
 
 
