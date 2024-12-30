@@ -204,7 +204,9 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale
 }
-
+.modal-backdrop{
+    display: none !important;
+}
 .xdebug-var-dump {
     position: relative;
     z-index: 1000
