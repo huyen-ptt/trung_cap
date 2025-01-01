@@ -2,7 +2,14 @@
 	padding: 40px 0;
 	background-color: #ffffff;
 }
-
+.title_bc{
+	font-size: 20px;
+	color: white;
+}
+.title-3{
+	color: #FFB84D;
+	font-size: 22px;
+}
 .flex-container_bc {
 	display: flex;
 	justify-content: center;
@@ -59,11 +66,22 @@
 		margin-bottom: 15px;
 	}
 }
-
+.tick{
+	width: 20px;
+}
+.tach{
+	margin-bottom: 30px;
+}
+input::placeholder{
+	color: #003399;
+}
+textarea::placeholder{
+	color: #003399;
+}
 .flex-item_bc {
 	flex: 1;
-	background: linear-gradient(to right, #FFB84D, #f19253);
-	padding: 25px 20px;
+	background: linear-gradient(to right, #7897d5, #0052cc);
+	padding: 20px 19px 14px;
 	border-radius: 8px;
 	text-align: center;
 	transition: transform 0.3s ease;
@@ -80,14 +98,14 @@
 .list_bc {
 	list-style: none;
 	padding: 0;
+	text-align: left;
 	margin: 0;
-	text-align: center;
 }
 
 .list-item_bc {
-	font-size: 1.1rem;
-	line-height: 1.5;
-	margin-bottom: 10px;
+	font-size: 17px;
+	/* line-height: 1.5; */
+	margin-bottom: 14px;
 	margin-left: 0 !important;
 }
 
@@ -203,7 +221,7 @@ h3 {
 p {
 	margin: 10px 0 0 0;
 	font-size: 14px;
-	color: #666;
+	color: #003399;
 }
 
 ._wgy_section_title {
@@ -676,7 +694,7 @@ body {
 h1 {
 	text-align: center;
 	margin-bottom: 30px;
-	color: #003366;
+	color: #003399;
 }
 
 .course-categories {
@@ -695,8 +713,9 @@ h1 {
 }
 
 .category-title {
-	color: #003366;
-	font-size: 20px;
+	color: #003399;
+	font-size: 22px;
+	text-align: center;
 	margin-bottom: 15px;
 	padding-bottom: 10px;
 	border-bottom: 2px solid #ffd700;
@@ -785,7 +804,7 @@ h1 {
 
 .icon-description {
 	text-align: center;
-	color: #666;
+	color: #003399;
 	margin-top: 5px;
 }
 
@@ -910,7 +929,7 @@ h1 {
 	transform: translate(-50%, -50%) rotate(-12deg);
 	width: 12rem;
 	height: 8rem;
-	background: #003366;
+	background: #003399;
 }
 
 .medal {
@@ -926,7 +945,7 @@ h1 {
 	justify-content: center;
 	font-size: 1.5rem;
 	font-weight: bold;
-	color: #003366;
+	color: #003399;
 }
 
 .diploma {
@@ -962,14 +981,14 @@ h1 {
 }
 
 .title {
-	color: #003366;
+	color: #003399;
 	font-size: 2.5rem;
 	font-weight: bold;
 	margin-bottom: 1.5rem;
 }
 
 .description {
-	color: #003366;
+	color: #003399;
 	margin-bottom: 2rem;
 }
 
@@ -996,17 +1015,17 @@ h1 {
 }
 
 .scholarship-amount {
-	color: #003366;
+	color: #003399;
 	font-weight: bold;
 	margin-bottom: 0.25rem;
 }
 
 .scholarship-criteria {
-	color: #003366;
+	color: #003399;
 }
 
 .note {
-	color: #003366;
+	color: #003399;
 	font-style: italic;
 	font-size: 0.875rem;
 	margin-top: 1.5rem;
@@ -1048,20 +1067,26 @@ h1 {
 }
 
 .contact-btn {
-	display: inline-block;
 	padding: 8px 15px;
 	background: #2561b1;
 	color: #ffffff;
 	text-decoration: none;
 	border-radius: 5px;
-	font-size: 14px;
+	text-align: center;
+	font-size: 12px;
 	margin-top: 10px;
+	width: 165px;
 	animation: pulse 2s infinite;
 	transition: all 0.3s ease;
 	/* Mượt mà khi thay đổi */
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	/* Thêm bóng đổ nhẹ */
 	transform: scale(1.1);
+	margin: auto;
+    display: flex
+;
+    flex-direction: column;
+    /* justify-content: center; */
 	/* Phóng to nhẹ ngay từ ban đầu */
 }
 

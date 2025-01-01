@@ -248,9 +248,22 @@ body {
 .highlight-text {
     display: inline-block;
     color: #FFB84D;
-    animation: bounce 1s infinite;
+    animation: scale 2s infinite;
 }
-
+.form-group_bc{
+    margin-bottom: 10px !important;
+}
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -1424,7 +1437,7 @@ body.boxed .is-sticky-section {
 }
 
 .section.dark {
-    background-color: #666
+    background-color: #003399
 }
 
 .section-bg {
@@ -2592,7 +2605,7 @@ li.hide-title>a {
     -webkit-transition: color .2s;
     -o-transition: color .2s;
     transition: color .2s;
-    color: #666
+    color: #003399
 }
 
 .nav-vertical>li>ul li a:hover {
@@ -3403,7 +3416,7 @@ input[type=button]:hover {
 
 .is-link,
 .is-underline {
-    color: #666
+    color: #003399
 }
 
 .dark .button.is-underline:hover,
@@ -3428,7 +3441,7 @@ input[type=button].is-form {
     position: relative;
     background-color: #f9f9f9;
     text-shadow: 1px 1px 1px #fff;
-    color: #666;
+    color: #003399;
     border: 1px solid #ddd;
     text-transform: none;
     font-weight: normal
@@ -3535,7 +3548,7 @@ input[type=submit],
 
 .white {
     background-color: #fff !important;
-    color: #666 !important
+    color: #003399 !important
 }
 
 .white.button.is-outline {
@@ -3553,7 +3566,7 @@ input[type=submit],
 .white.is-outline:hover {
     background-color: #fff !important;
     border-color: #fff;
-    color: #666 !important
+    color: #003399 !important
 }
 
 .secondary,
@@ -6423,7 +6436,7 @@ td {
 }
 
 td {
-    color: #666
+    color: #003399
 }
 
 th:first-child,
@@ -6711,7 +6724,6 @@ ul li.bullet-star:before {
 
 .button,
 button,
-input,
 textarea,
 select,
 fieldset {
