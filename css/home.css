@@ -65,9 +65,13 @@
 		height: 200px;
 		margin-bottom: 15px;
 	}
+
 }
 .tick{
 	width: 20px;
+}
+.map-container iframe{
+	max-height: 200px;
 }
 .tach{
 	margin-bottom: 30px;
@@ -727,7 +731,8 @@ h1 {
 }
 
 .course-item {
-	padding: 10px;
+	font-size: 15px;
+	padding: 8px;
 	margin-bottom: 10px;
 	background: #f8f9fa;
 	color: #003399;
@@ -1065,7 +1070,10 @@ h1 {
 		padding: 0px;
 	}
 }
+.contact-btn1{
+	 width: 165px;
 
+}
 .contact-btn {
 	padding: 8px 15px;
 	background: #2561b1;
@@ -1075,7 +1083,7 @@ h1 {
 	text-align: center;
 	font-size: 12px;
 	margin-top: 10px;
-	width: 165px;
+
 	animation: pulse 2s infinite;
 	transition: all 0.3s ease;
 	/* Mượt mà khi thay đổi */
@@ -1193,7 +1201,7 @@ h1 {
 
 	.courses-list {
 		list-style: none;
-		height: 368px;
+		height: 458px;
 	}
 
 	.course-item {
