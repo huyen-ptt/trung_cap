@@ -3543,8 +3543,33 @@ input[type=submit],
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
+#notification1 {
+    padding: 10px;
+    margin: 10px 0;
+    display: none;
+    border-radius: 5px;
+}
+.info {
+    background-color: #f0f0f0;
+    color: #003399;
+}
+/* .success1 {
+    background-color: #d4edda;
+    color: #155724;
+} */
+.error {
+    background-color: #f8d7da;
+    color: #721c24;
+}
+.message {
+    display: none;
+    color: white;
+    margin-top: 10px;
+    text-align: center;
+}
 .success {
     background-color: #003399;
+    color: white;
 }
 
 .success.is-underline,
@@ -6481,7 +6506,7 @@ td p {
 }
 
 label {
-    color: #222
+    color: #003399;
 }
 
 .table {
