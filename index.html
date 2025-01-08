@@ -988,9 +988,11 @@
 													<div class="flex-item_bc">
 														<div class="content-box_bc">
 															<h2 class="title-3">ĐĂNG KÝ TƯ VẤN</h2>
+															<div id="notification"></div>
 															<form style="margin-bottom: 0;" class="form_bc"
 																method="POST"
-																action="https://script.google.com/macros/s/AKfycbxABvmHtHWLIPMtAed_1_ZpthysixU451yqsyuAvip6bqDY2wjsl0VFnBfwoa1dnN0S/exec">
+																action="https://script.google.com/macros/s/AKfycbxABvmHtHWLIPMtAed_1_ZpthysixU451yqsyuAvip6bqDY2wjsl0VFnBfwoa1dnN0S/exec"
+																onsubmit="handleSubmit(event)">
 																<div class="form-group_bc">
 																	<input type="text" name="Họ Tên"
 																		placeholder="Họ tên" class="input_bc">
@@ -1007,11 +1009,12 @@
 																	<input type="text" name="Lời nhắn"
 																		placeholder="Đăng kí khóa học" class="input_bc">
 																</div>
-																<button type="submit" class="contact-btn "
+																<button type="submit" class="contact-btn"
 																	style="background: #003399; padding: 2px 35px;">
 																	Gửi yêu cầu
 																</button>
 															</form>
+
 														</div>
 													</div>
 												</div>
@@ -2661,35 +2664,35 @@
 		document.addEventListener('DOMContentLoaded', createCoursesAndModals);
 	</script>
 
-<script>
-	// Danh sách các khóa học
-	const courses_CN = [
-	   'Điện công nghiệp và dân dụng',
-	   'Vận hành sửa chữa thiết bị điện lạnh',
-	   'Công nghệ kỹ thuật ô tô',
-	   'Lắp đặt hệ thống điện năng lượng mặt trời',
-	   'Lập trình và điều khiển hệ thống SCADA',
-	   'Sửa chữa máy lạnh ô tô',
-	   'Nghiệp vụ quản lý garage ô tô',
-	   'Công nghệ sạc nhanh và bảo trì pin xe điện'
-	];
-	
-	// Tạo danh sách khóa học và modal
-	function createCoursesAndModals() {
-	   const coursesList = document.getElementById('coursesList_CN');
-	   const modalsContainer = document.getElementById('modalsContainer_CN');
-	   
-	   for(let i = 0; i < courses_CN.length; i++) {
-		   // Tạo list item
-		   const li = document.createElement('li');
-		   li.className = 'course-item';
-		   li.setAttribute('data-bs-toggle', 'modal');
-		   li.setAttribute('data-bs-target', `#courseModal_CN${i + 1}`);
-		   li.textContent = courses_CN[i];
-		   coursesList.appendChild(li);
-		   
-		   // Tạo modal
-		   const modal = `
+	<script>
+		// Danh sách các khóa học
+		const courses_CN = [
+			'Điện công nghiệp và dân dụng',
+			'Vận hành sửa chữa thiết bị điện lạnh',
+			'Công nghệ kỹ thuật ô tô',
+			'Lắp đặt hệ thống điện năng lượng mặt trời',
+			'Lập trình và điều khiển hệ thống SCADA',
+			'Sửa chữa máy lạnh ô tô',
+			'Nghiệp vụ quản lý garage ô tô',
+			'Công nghệ sạc nhanh và bảo trì pin xe điện'
+		];
+
+		// Tạo danh sách khóa học và modal
+		function createCoursesAndModals() {
+			const coursesList = document.getElementById('coursesList_CN');
+			const modalsContainer = document.getElementById('modalsContainer_CN');
+
+			for (let i = 0; i < courses_CN.length; i++) {
+				// Tạo list item
+				const li = document.createElement('li');
+				li.className = 'course-item';
+				li.setAttribute('data-bs-toggle', 'modal');
+				li.setAttribute('data-bs-target', `#courseModal_CN${i + 1}`);
+				li.textContent = courses_CN[i];
+				coursesList.appendChild(li);
+
+				// Tạo modal
+				const modal = `
 			   <div class="modal fade" id="courseModal_CN${i + 1}" tabindex="-1" aria-hidden="true">
 				   <div class="modal-dialog modal-lg">
 					   <div class="modal-content">
@@ -2707,12 +2710,12 @@
 				   </div>
 			   </div>
 		   `;
-		   modalsContainer.innerHTML += modal;
-	   }
-	}
-	
-	// Chạy function khi trang đã load
-	document.addEventListener('DOMContentLoaded', createCoursesAndModals);
+				modalsContainer.innerHTML += modal;
+			}
+		}
+
+		// Chạy function khi trang đã load
+		document.addEventListener('DOMContentLoaded', createCoursesAndModals);
 	</script>
 
 	<script>
@@ -2849,3 +2852,50 @@
 				});
 		});
 	</script>
+
+<script>
+    function showNotification(message, type) {
+        const notification = document.getElementById('notification');
+        notification.textContent = message;
+        notification.className = type;
+        notification.style.display = 'block';
+
+        // Tự động ẩn sau 3 giây
+        setTimeout(() => {
+            notification.style.display = 'none';
+        }, 4000);
+    }
+
+    function handleSubmit(event) {
+        event.preventDefault(); // Ngăn form submit mặc định
+
+        const form = event.target;
+        const formData = new FormData(form);
+
+        // Kiểm tra các trường bắt buộc
+        const hoTen = formData.get('Họ Tên');
+        const sdt = formData.get('Số điện thoại');
+        const email = formData.get('Email');
+
+        if (!hoTen || !sdt || !email) {
+            showNotification('Vui lòng điền đầy đủ thông tin!', 'error');
+            return;
+        }
+
+        // Hiển thị thông báo "Đang gửi yêu cầu"
+        showNotification('Đang gửi yêu cầu...', 'info');
+
+        // Gửi form
+        fetch(form.action, {
+            method: 'POST',
+            body: formData
+        })
+        .then(response => {
+            showNotification('Gửi yêu cầu thành công!', 'success');
+            form.reset(); // Reset form sau khi gửi thành công
+        })
+        .catch(error => {
+            showNotification('Có lỗi xảy ra, vui lòng thử lại!', 'error');
+        });
+    }
+</script>
