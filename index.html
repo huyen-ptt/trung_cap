@@ -30,10 +30,10 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="TRUNG CẤP CÔNG NGHỆ VIỆT NHẬT" />
 	<meta property="og:url" content="index.html" />
-	<meta property="og:site_name" content="Landing Page" />
-	<meta property="article:modified_time" content="2023-12-29T02:14:56+00:00" />
-	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:label1" content="Ước tính thời gian đọc" />
+	<meta property="og:site_name" content="TRUNG CẤP CÔNG NGHỆ VIỆT NHẬT" />
+	<meta name="description" content="Đào tạo Nghề dành riêng cho người đi làm" />
+
+	<meta property="og:image" content="./imgs/logo1.png" />
 	<meta name="twitter:data1" content="10 phút" />
 	<!-- <script type="application/ld+json"
 		class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://page1.htecom.net/","url":"https://page1.htecom.net/","name":"TRUNG CẤP CÔNG NGHỆ VIỆT NHẬT","isPartOf":{"@id":"https://page1.htecom.net/#website"},"datePublished":"2023-04-06T06:51:11+00:00","dateModified":"2023-12-29T02:14:56+00:00","breadcrumb":{"@id":"https://page1.htecom.net/#breadcrumb"},"inLanguage":"vi","potentialAction":[{"@type":"ReadAction","target":["https://page1.htecom.net/"]}]},{"@type":"BreadcrumbList","@id":"https://page1.htecom.net/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Trang chủ"}]},{"@type":"WebSite","@id":"https://page1.htecom.net/#website","url":"https://page1.htecom.net/","name":"Landing Page","description":"Mẫu","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://page1.htecom.net/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"vi"}]}</script> -->
@@ -988,29 +988,39 @@
 													<div class="flex-item_bc">
 														<div class="content-box_bc">
 															<h2 class="title-3">ĐĂNG KÝ TƯ VẤN</h2>
-															<form style="margin-bottom: 0;" class="form_bc" id="registrationForm" method="POST" action="https://script.google.com/macros/s/AKfycbxABvmHtHWLIPMtAed_1_ZpthysixU451yqsyuAvip6bqDY2wjsl0VFnBfwoa1dnN0S/exec">
+															<form style="margin-bottom: 0;" class="form_bc"
+																id="registrationForm" method="POST"
+																action="https://script.google.com/macros/s/AKfycbxABvmHtHWLIPMtAed_1_ZpthysixU451yqsyuAvip6bqDY2wjsl0VFnBfwoa1dnN0S/exec">
 																<div class="form-group_bc">
-																	<input type="text" name="Họ Tên" placeholder="Họ tên" class="input_bc" required>
+																	<input type="text" name="Họ Tên"
+																		placeholder="Họ tên" class="input_bc" required>
 																</div>
 																<div class="form-group_bc">
-																	<input type="tel" name="Số điện thoại" placeholder="Số điện thoại" class="input_bc" required>
+																	<input type="tel" name="Số điện thoại"
+																		placeholder="Số điện thoại" class="input_bc"
+																		required>
 																</div>
 																<div class="form-group_bc">
-																	<input type="email" name="Email" placeholder="Email" class="input_bc" required>
+																	<input type="email" name="Email" placeholder="Email"
+																		class="input_bc" required>
 																</div>
 																<div class="form-group_bc">
-																	<input type="text" name="Lời nhắn" placeholder="Đăng kí khóa học" class="input_bc" required>
+																	<input type="text" name="Lời nhắn"
+																		placeholder="Đăng kí khóa học" class="input_bc"
+																		required>
 																</div>
-																<button type="submit" class="contact-btn" style="background: #003399; padding: 2px 35px;">
+																<button type="submit" class="contact-btn"
+																	style="background: #003399; padding: 2px 35px;">
 																	Gửi yêu cầu
 																</button>
 															</form>
-															<p id="successMessage" class="message">Đăng ký tư vấn thành công!</p>
+															<p id="successMessage" class="message">Đăng ký tư vấn thành
+																công!</p>
 														</div>
 													</div>
-													
-												
-													
+
+
+
 												</div>
 											</div>
 										</div>
@@ -2806,35 +2816,35 @@
 				});
 		});
 	</script>
-<script>
-	document.getElementById('registrationForm').addEventListener('submit', function(e) {
-		e.preventDefault();
-		
-		// Lấy form data
-		const formData = new FormData(this);
-		
-		// Gửi request đến Google Script
-		fetch(this.action, {
-			method: 'POST',
-			body: formData
-		})
-		.then(response => {
-			// Hiển thị thông báo
-			document.getElementById('successMessage').style.display = 'block';
-			
-			// Reset form
-			this.reset();
-	
-			// Ẩn thông báo sau 3 giây
-			setTimeout(() => {
-				document.getElementById('successMessage').style.display = 'none';
-			}, 3000);
-		})
-		.catch(error => {
-			console.error('Lỗi:', error);
-			alert('Có lỗi xảy ra, vui lòng thử lại sau!');
+	<script>
+		document.getElementById('registrationForm').addEventListener('submit', function (e) {
+			e.preventDefault();
+
+			// Lấy form data
+			const formData = new FormData(this);
+
+			// Gửi request đến Google Script
+			fetch(this.action, {
+				method: 'POST',
+				body: formData
+			})
+				.then(response => {
+					// Hiển thị thông báo
+					document.getElementById('successMessage').style.display = 'block';
+
+					// Reset form
+					this.reset();
+
+					// Ẩn thông báo sau 3 giây
+					setTimeout(() => {
+						document.getElementById('successMessage').style.display = 'none';
+					}, 3000);
+				})
+				.catch(error => {
+					console.error('Lỗi:', error);
+					alert('Có lỗi xảy ra, vui lòng thử lại sau!');
+				});
 		});
-	});
 	</script>
 
 	<script>
