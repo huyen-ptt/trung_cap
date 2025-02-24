@@ -1264,6 +1264,33 @@
 									Liên hệ tư vấn
 								</a>
 							</div>
+							<div class="category col-12 col-md-6 col-lg-4">
+								<h2 class="category-title">SỨC KHỎE - THẨM MỸ</h2>
+								<ul class="courses-list" id="coursesList_TM"></ul>
+								<div id="modalsContainer_TM"></div>
+								<a href="#row-746695895" class="contact-btn contact-btn1">
+									Liên hệ tư vấn
+								</a>
+							</div>
+							<div class="category col-12 col-md-6 col-lg-4">
+								<h2 class="category-title">SỨC KHỎE CƠ BẢN</h2>
+								<ul class="courses-list" id="coursesList_SC"></ul>
+								<div id="modalsContainer_SC"></div>
+								<a href="#row-746695895" class="contact-btn contact-btn1">
+									Liên hệ tư vấn
+								</a>
+							</div>
+							<div class="category col-12 col-md-6 col-lg-4">
+								<h2 class="category-title">CME
+								</h2>
+								<ul class="courses-list" id="coursesList_MS"></ul>
+								<div id="modalsContainer_MS"></div>
+								<a href="#row-746695895" class="contact-btn contact-btn1">
+									Liên hệ tư vấn
+								</a>
+							</div>
+
+
 						</div>
 
 
@@ -1826,10 +1853,10 @@
 				<div class="modal-body">
 					<div class="row">
 						<div class="col-md-6">
-							<img src="./imgs/h3.png" alt="Image 1" class="img-fluid">
+							<img src="./imgs/1.png" alt="Image 1" class="img-fluid">
 						</div>
 						<div class="col-md-6">
-							<img src="./imgs/hi1.jpg" alt="Image 2" class="img-fluid">
+							<img src="./imgs/4.png" alt="Image 2" class="img-fluid">
 						</div>
 					</div>
 				</div>
@@ -2790,6 +2817,173 @@
 		document.addEventListener('DOMContentLoaded', createCoursesAndModals);
 	</script>
 
+	<script>
+		// Danh sách các khóa học
+		const courses_TM = [
+			'Phun thêu, xăm thẩm mỹ',
+			'Nối mi nghệ thuật',
+			'Ứng dụng thành phần mỹ phẩm trong chăm sóc sắc đẹp',
+			'Ứng dụng laser trong chăm sóc sắc đẹp',
+			'An toàn y tế và phòng chống lây nhiễm tại cơ sở thẩm mỹ',
+			'Trang điểm Thẩm mỹ',
+			'Massage body',
+			'Thiết kế, tạo mẫu tóc nghệ thuật',
+			'Chăm sóc Da',
+			'Vẽ móng nghệ thuật'
+		];
+
+		// Tạo danh sách khóa học và modal
+		function createCoursesAndModals() {
+			const coursesList = document.getElementById('coursesList_TM');
+			const modalsContainer = document.getElementById('modalsContainer_TM');
+
+			for (let i = 0; i < courses_TM.length; i++) {
+				// Tạo list item
+				const li = document.createElement('li');
+				li.className = 'course-item';
+				li.setAttribute('data-bs-toggle', 'modal');
+				li.setAttribute('data-bs-target', `#courseModal_TM${i + 1}`);
+				li.textContent = courses_TM[i];
+				coursesList.appendChild(li);
+
+				// Tạo modal
+				const modal = `
+			   <div class="modal fade" id="courseModal_TM${i + 1}" tabindex="-1" aria-hidden="true">
+				   <div class="modal-dialog modal-lg">
+					   <div class="modal-content">
+						   <div class="modal-header">
+							   <h5 class="modal-title">${courses_TM[i]}</h5>
+							   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						   </div>
+						   <div class="modal-body">
+							   <img src="./imgs/TM${i + 1}.png" class="img-fluid" alt="${courses_TM[i]}">
+						   </div>
+						   <div class="modal-footer">
+							   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+						   </div>
+					   </div>
+				   </div>
+			   </div>
+		   `;
+				modalsContainer.innerHTML += modal;
+			}
+		}
+
+		// Chạy function khi trang đã load
+		document.addEventListener('DOMContentLoaded', createCoursesAndModals);
+	</script>
+
+	<script>
+		// Danh sách các khóa học
+		const courses_SC = [
+			'KTV Kinh Thuốc',
+			'KTV Khúc Xạ',
+			'KTV Mài Lắp Kính',
+			'KTV chăm sóc răng miệng',
+			'KTV Nha khoa',
+			'Y Sĩ sản nhi mắt',
+			'KTV Xoa bóp bấm huyệt',
+			'Vật lý trị liệu - Phục hồi chức năng',
+			'Điều dưỡng cơ bản',
+			'Tư vấn dinh dưỡng'
+		];
+
+		// Tạo danh sách khóa học và modal
+		function createCoursesAndModals() {
+			const coursesList = document.getElementById('coursesList_SC');
+			const modalsContainer = document.getElementById('modalsContainer_SC');
+
+			for (let i = 0; i < courses_SC.length; i++) {
+				// Tạo list item
+				const li = document.createElement('li');
+				li.className = 'course-item';
+				li.setAttribute('data-bs-toggle', 'modal');
+				li.setAttribute('data-bs-target', `#courseModal_SC${i + 1}`);
+				li.textContent = courses_SC[i];
+				coursesList.appendChild(li);
+
+				// Tạo modal
+				const modal = `
+		   <div class="modal fade" id="courseModal_SC${i + 1}" tabindex="-1" aria-hidden="true">
+			   <div class="modal-dialog modal-lg">
+				   <div class="modal-content">
+					   <div class="modal-header">
+						   <h5 class="modal-title">${courses_SC[i]}</h5>
+						   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					   </div>
+					   <div class="modal-body">
+						   <img src="./imgs/SC${i + 1}.png" class="img-fluid" alt="${courses_SC[i]}">
+					   </div>
+					   <div class="modal-footer">
+						   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+					   </div>
+				   </div>
+			   </div>
+		   </div>
+	   `;
+				modalsContainer.innerHTML += modal;
+			}
+		}
+
+		// Chạy function khi trang đã load
+		document.addEventListener('DOMContentLoaded', createCoursesAndModals);
+	</script>
+	<script>
+		// Danh sách các khóa học
+		const courses_MS = [
+			'Quản lý bệnh viện',
+			'Quản lý chất lượng bệnh viện',
+			'Quản lý điều dưỡng',
+			'Sư phạm y học cơ bản',
+			'Dinh dưỡng lâm sàng',
+			'Nuôi con bằng sữa mẹ',
+			'Quản lý chất lượng phòng xét nghiệm',
+			'Quản lý chất thải y tế',
+			'Quản lý thiết bị y tế',
+			'An toàn người bệnh',
+		
+		];
+
+		// Tạo danh sách khóa học và modal
+		function createCoursesAndModals() {
+			const coursesList = document.getElementById('coursesList_MS');
+			const modalsContainer = document.getElementById('modalsContainer_MS');
+
+			for (let i = 0; i < courses_MS.length; i++) {
+				// Tạo list item
+				const li = document.createElement('li');
+				li.className = 'course-item';
+				li.setAttribute('data-bs-toggle', 'modal');
+				li.setAttribute('data-bs-target', `#courseModal_MS${i + 1}`);
+				li.textContent = courses_MS[i];
+				coursesList.appendChild(li);
+
+				// Tạo modal
+				const modal = `
+			   <div class="modal fade" id="courseModal_MS${i + 1}" tabindex="-1" aria-hidden="true">
+				   <div class="modal-dialog modal-lg">
+					   <div class="modal-content">
+						   <div class="modal-header">
+							   <h5 class="modal-title">${courses_MS[i]}</h5>
+							   <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+						   </div>
+						   <div class="modal-body">
+							   <img src="./imgs/MS${i + 1}.png" class="img-fluid" alt="${courses_MS[i]}">
+						   </div>
+						   <div class="modal-footer">
+							   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
+						   </div>
+					   </div>
+				   </div>
+			   </div>
+		   `;
+				modalsContainer.innerHTML += modal;
+			}
+		}
+
+		// Chạy function khi trang đã load
+		document.addEventListener('DOMContentLoaded', createCoursesAndModals);
+	</script>
 
 	<script>
 		document.getElementById('contactForm').addEventListener('submit', function (e) {
